@@ -1,0 +1,11 @@
+/* .nav::before{
+  content: '';
+  background: #E8E8E8;
+  position: absolute; 
+  inset: 0;
+  z-index: -1;
+  transition: all .3s linear;
+  
+   
+
+} */

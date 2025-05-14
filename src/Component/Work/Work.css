@@ -1,0 +1,57 @@
+.wImg{
+    position: relative;
+}
+/* .wImg img{
+   object-position: center;
+    object-fit: cover;
+    width: 600px;
+    height: 300px;
+    position: relative;
+   
+} */
+.wImg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* dark overlay */
+    z-index: 1;
+    transition: all .3s linear;
+  }
+  
+  .wImg:hover::before , .mImg:hover::before {
+    background: rgba(0, 0, 0, 0);
+     /* transparent on hover */
+  }
+  
+  .mImg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    transition: all .3s linear;
+
+  }
+  .btn{
+   position: relative;
+  }
+   .btnn::before{
+    content: " ";
+    border-top: 1px solid black;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+  }
+
+  .btnn::after{
+    content: " ";
+    border-top: 1px solid black;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+  }
+  
