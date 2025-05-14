@@ -22,17 +22,17 @@ function Work() {
         </div>
         <div className="flex w-full gap-6">
   <div className="relative w-[600px] h-[300px] overflow-hidden wImg">
-    <img src={img1} alt="" className="object-cover w-full h-full" />
+    <img src={img5} alt="" className="object-cover w-full h-full" />
   </div>
   <div className="relative w-[600px] h-[300px] overflow-hidden wImg">
-    <img src={img7} alt="" className="object-cover w-full h-full" />
+    <img src={img6} alt="" className="object-cover w-full h-full" />
   </div>
 </div>
 
       </div>
       <div className="relative btn ">
         {/* <hr className='absolute -z-1 top-8 w-full' /> */}
-        <button className=' btnn text-[24px] bg-[#8D8271] px-5 py-3 rounded-2xl  text-[#fff] font-medium  transition '>
+        <button className=' btnn text-[24px] bg-gray-700 px-5 py-3 rounded-2xl  text-[#fff] font-medium  transition '>
             Expore More
         </button>
       </div>
