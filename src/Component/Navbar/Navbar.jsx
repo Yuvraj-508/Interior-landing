@@ -13,7 +13,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className='w-full fixed top-0 px-[12%] mt-5 z-10 transition-all duration-300'>
+    <div className='w-full fixed top-0 px-[12%] mt-2 z-100 transition-all duration-300'>
       <nav
         className={`nav flex justify-between items-center py-3.5 px-5 rounded-4xl transition-all duration-300 bg-white/70 backdrop-blur-md shadow-md`}
       >

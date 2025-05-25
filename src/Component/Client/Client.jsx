@@ -66,10 +66,10 @@ function Client() {
   const testimonial = testimonials[index];
 
   return (
-    <div className="w-full flex flex-col items-center justify-center mt-16">
+    <div className="w-full flex flex-col items-center justify-center mt-13">
       <h1 className="text-[54px] font-normal">Client Stories</h1>
 
-      <div className="w-full flex mt-10 overflow-hidden">
+      <div className="w-full flex mt-8 overflow-hidden">
         {/* Left Section */}
         <div className="w-1/2 bg-[#02312F] flex flex-col items-center justify-center text-white py-10 px-10 relative  overflow-hidden">
           <AnimatePresence mode="wait">
