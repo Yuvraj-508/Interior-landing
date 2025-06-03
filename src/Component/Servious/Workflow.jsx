@@ -11,7 +11,7 @@ const fadeInUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
 };
 
-export default function Service() {
+export default function WorkFlow() {
   const [activeStep, setActiveStep] = useState(0);
   const [visibleSteps, setVisibleSteps] = useState(new Set());
   const steps = [
@@ -106,7 +106,7 @@ export default function Service() {
               ref={ref}
               initial="hidden"
               animate={controls}
-              variants={fadeInUp}
+              // variants={fadeInUp}
               className="w-full flex flex-col items-center gap-5 justify-center text-white bg-[#004643] px-2 py-4 relative overflow-hidden rounded-xl"
             >
               <div className="w-[550px] h-[350px] relative rounded-3xl px-2">

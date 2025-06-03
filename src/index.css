@@ -7,3 +7,19 @@
 .dm{
     font-family:'DM Sans', sans-serif;
 }
+.action{
+        position: relative;
+       
+        background-position: 0% 30%  ;
+        background-size: cover;   
+        background-repeat: no-repeat;
+    background-image: url('./assets/ser/action.png');
+}
+.aimg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2); /* dark overlay */
+    z-index: 1;
+    transition: all .3s linear;
+  }

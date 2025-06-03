@@ -66,8 +66,8 @@ function Client() {
   const testimonial = testimonials[index];
 
   return (
-    <div className="w-full flex flex-col items-center justify-center mt-13">
-      <h1 className="text-[54px] font-normal">Client Stories</h1>
+    <div className="w-full flex flex-col items-center justify-center mt-30">
+      <h1 className="text-[54px] font-normal text-[#02312F]">Client Stories</h1>
 
       <div className="w-full flex mt-8 overflow-hidden">
         {/* Left Section */}
