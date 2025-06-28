@@ -31,3 +31,9 @@
     z-index: 100;
     backdrop-filter: blur(20px); /* blurs the background behind this element */
   }
+  @media (max-width:1024px){
+    .action{
+        background-position: center;
+        height: 80vh;
+    }
+  }

@@ -71,7 +71,7 @@ function Client() {
 
       <div className="w-full flex mt-8 overflow-hidden">
         {/* Left Section */}
-        <div className="w-1/2 bg-[#02312F] flex flex-col items-center justify-center text-white py-10 px-10 relative  overflow-hidden">
+        <div className="md:w-1/2 bg-[#02312F] flex flex-col items-center justify-center text-white py-10 px-10 relative  overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div
               key={index}
@@ -79,7 +79,7 @@ function Client() {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: direction > 0 ? -300 : 300, opacity: 0 }}
               transition={{ duration: 0.5 }}
-              className="max-w-[70%]  overflow-x-hidden"
+              className="md:max-w-[70%]  overflow-x-hidden"
             >
               <p className="text-[28px] leading-10 font-bold">"{testimonial.quote}"</p>
               <p className="text-[26px] font-bold mt-5">{testimonial.name}</p>
@@ -97,7 +97,7 @@ function Client() {
         </div>
 
         {/* Right Section */}
-        <div className="w-1/2 flex items-center justify-center h-[500px] relative overflow-hidden">
+        <div className="hidden w-1/2 md:flex items-center justify-center h-[500px] relative overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.img
               key={testimonial.image}

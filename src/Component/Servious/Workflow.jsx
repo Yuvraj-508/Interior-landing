@@ -59,9 +59,9 @@ export default function WorkFlow() {
   });
 };
   return (
-    <div className="w-full flex mt-25 px-[5%]">
+    <div className="w-full flex mt-25 px-[2%] sm:px-[4%] md:px-[8%] lg:px-[12%]">
       {/* Left Side */}
-      <div className="w-[59%] flex flex-col gap-5 sticky top-20 h-fit">
+      <div className="md:w-[59%] hidden md:flex flex-col gap-5 sticky top-20 h-fit">
         <p className="text-xl font-bold text-white rounded-xl px-3 py-1 w-fit bg-[#004643] flex items-center gap-1">
           <ClipboardList /> How We Work
         </p>
@@ -85,7 +85,7 @@ export default function WorkFlow() {
       </div>
 
       {/* Right Side */}
-      <div className="w-[41%] flex flex-col items-center justify-center gap-8">
+      <div className="md:w-[41%] w-full flex flex-col items-center justify-center gap-8">
         {steps.map((step, index) => {
           const ref = useRef(null);
           const controls = useAnimation();
@@ -107,20 +107,20 @@ export default function WorkFlow() {
               initial="hidden"
               animate={controls}
               // variants={fadeInUp}
-              className="w-full flex flex-col items-center gap-5 justify-center text-white bg-[#004643] px-2 py-4 relative overflow-hidden rounded-xl"
+              className="w-full flex flex-col  flex-wrap items-center md:gap-5 justify-center text-white bg-[#004643] px-2 py-4 relative overflow-hidden rounded-xl"
             >
-              <div className="w-[550px] h-[350px] relative rounded-3xl px-2">
+              <div className="md:w-[550px] w-full  h-[350px] relative overflow-hidden rounded-3xl px-2">
                 <img src={step.img} alt="" className="w-full rounded-3xl h-full" />
               </div>
-              <div className="w-[535px] absolute flex items-center gap-5 bg-white/15 backdrop-blur-xl bottom-26 px-4 z-10">
+              <div className="md:w-[535px]  w-full  absolute flex items-center gap-5 bg-white/15 backdrop-blur-xl sm:bottom-0 md:bottom-26 bottom-0 px-4 z-10">
                 <p className="text-[16px] font-bold -translate-y-7">STEP</p>
                 <p className="text-[76px] dm">{step.step}</p>
                 <p className="text-[22px] font-bold dm -translate-y-5">
-                  <hr className="w-[310px] mb-1" />
+                  <hr className="md:w-[310px] mb-1" />
                   {step.title}
                 </p>
               </div>
-              <p className="mt-7 text-[20px] w-[530px] font-bold leading-6">{step.desc}</p>
+              <p className="mt-7 text-[20px] hidden md:w-[530px]  font-bold leading-6">{step.desc}</p>
             </motion.div>
           );
         })}

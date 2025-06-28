@@ -55,3 +55,11 @@
     z-index: 1;
   }
   
+  @media (max-width:958px){
+    .btnn::after{
+      visibility: hidden;
+    }
+   .btnn::before{
+    visibility: hidden;
+  }
+  }
