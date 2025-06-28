@@ -18,7 +18,7 @@ function About() {
 
   const duplicated = [...testimonials, ...testimonials];
   return (
-    <div className="about w-full flex  flex-col px-[2%] sm:px-[4%] md:px-[8%] lg:px-[12%] mt-10">
+    <div className="about w-full flex  flex-col px-[4%] md:px-[8%] lg:px-[12%] mt-10">
       <div className="w-full flex justify-center py-16">
         <div className="flex flex-col md:flex-row  w-full max-w-6xl items-center gap-14">
           {/* Left Image Section */}
@@ -26,7 +26,7 @@ function About() {
             <img
               src={AboutP}
               alt="About"
-              className="sm:w-[450px] w-[350px] md:w-[350px] sm:h-[450px] md:h-[500px] md:rounded-tl-[30%] rounded-xl"
+              className="sm:w-[450px] w-[300px] md:w-[350px] sm:h-[450px] md:h-[500px] h-[330px] md:rounded-tl-[30%] rounded-xl"
             />
           </div>
 

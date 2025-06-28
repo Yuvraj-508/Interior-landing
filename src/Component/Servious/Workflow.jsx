@@ -59,7 +59,7 @@ export default function WorkFlow() {
   });
 };
   return (
-    <div className="w-full flex mt-25 px-[2%] sm:px-[4%] md:px-[8%] lg:px-[12%]">
+    <div className="w-full flex mt-25 px-[4%] md:px-[8%] lg:px-[12%]">
       {/* Left Side */}
       <div className="md:w-[59%] hidden md:flex flex-col gap-5 sticky top-20 h-fit">
         <p className="text-xl font-bold text-white rounded-xl px-3 py-1 w-fit bg-[#004643] flex items-center gap-1">

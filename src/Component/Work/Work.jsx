@@ -10,7 +10,7 @@ import img8 from '../../assets/heroI/w8.avif'
 
 function Work() {
   return (
-    <div className='work w-full px-[2%] sm:px-[4%] md:px-[8%] lg:px-[12%] mt-15 text-center flex flex-col gap-18'>
+    <div className='work w-full px-[4%] md:px-[8%] lg:px-[12%] mt-15 text-center flex flex-col gap-18'>
       <div className="w-full flex flex-col gap-3 items-center   ">
         <h1 className='text-[54px] md:max-w-[45%] leading-15 text-center'>ELGANCE REDEFINED</h1>
         <hr className='w-[20%] ' />

@@ -71,7 +71,7 @@ function Client() {
 
       <div className="w-full flex mt-8 overflow-hidden">
         {/* Left Section */}
-        <div className="md:w-1/2 bg-[#02312F] flex flex-col items-center justify-center text-white py-10 px-10 relative  overflow-hidden">
+        <div className="md:w-1/2 w-full bg-[#02312F] flex flex-col items-center justify-center text-white py-10 px-10 relative  overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.div
               key={index}
@@ -81,7 +81,7 @@ function Client() {
               transition={{ duration: 0.5 }}
               className="md:max-w-[70%]  overflow-x-hidden"
             >
-              <p className="text-[28px] leading-10 font-bold">"{testimonial.quote}"</p>
+              <p className="sm:text-[28px] text-[22px]  leading-10 font-bold">"{testimonial.quote}"</p>
               <p className="text-[26px] font-bold mt-5">{testimonial.name}</p>
               <p className="text-[18px] font-light">{testimonial.location}</p>
               <div className="mt-6 flex gap-4 float-end">
