@@ -5,3 +5,25 @@
     background-position: -20% 100%  ;
     background-repeat: no-repeat;
 }
+
+@media (max-width:760px){
+   .hero{
+    height: 60vh;
+    background-position: center;
+    /* background-size: contain; */
+    /* background-position: -10% 100%  ; */
+   }
+}
+@media (max-width:1024px){
+    .hero{
+     height: 90vh;
+     background-position: center;
+     /* background-position: -10% 100%  ; */
+    }
+ }
+ @media (max-width:524px){
+    .hero{
+     height: 70vh;
+    
+    }
+ }

@@ -23,3 +23,11 @@
     z-index: 1;
     transition: all .3s linear;
   }
+
+  .bef {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5); /* combines color and opacity */
+    inset: 0;
+    z-index: 100;
+    backdrop-filter: blur(20px); /* blurs the background behind this element */
+  }
