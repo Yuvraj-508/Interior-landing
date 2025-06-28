@@ -2,7 +2,7 @@ import React from 'react'
 import Img from "../../assets/ser/action.png";
 function Action() {
   return (
-    <div className=' action flex w-full mt-20 h-screen px-4  gap-20 flex-col'>
+    <div className=' action flex w-full mt-20 h-screen   gap-20 flex-col'>
       <div className="flex flex-col lg:flex-row  gap-10 justify-between items-center  w-full relative px-[8%] mt-25 text-white">
      <div className="lg:max-w-[90%]"> <h1 className='md:text-[64px] sm:text-[48px] text-[44px] leading-15 font-bold dm text-center lg::text-start '>Unlock Your Dream Home Today!</h1></div>
       <div className="lg:max-w-[60%] text-center lg:text-start flex flex-col gap-7 ">
