@@ -6,6 +6,7 @@ import Img2 from "../../assets/Ab/aa1.avif";
 import Img3 from "../../assets/Ab/aa3.avif";
 import Img4 from "../../assets/Ab/aa4.avif";
 import Img5 from "../../assets/Ab/3.avif";
+import ScrollFadeIn from "../Scroll";
 function About() {
   const testimonials = [
     { id: 1, image: Img1, className: "w-90 h-100" },
@@ -18,6 +19,7 @@ function About() {
 
   const duplicated = [...testimonials, ...testimonials];
   return (
+    <ScrollFadeIn>
     <div className="about w-full flex  flex-col px-[4%] md:px-[8%] lg:px-[12%] mt-10">
       <div className="w-full flex justify-center py-16">
         <div className="flex flex-col md:flex-row  w-full max-w-6xl items-center gap-14">
@@ -74,6 +76,7 @@ function About() {
           </motion.div>
       </div>
     </div>
+    </ScrollFadeIn>
   );
 }
 

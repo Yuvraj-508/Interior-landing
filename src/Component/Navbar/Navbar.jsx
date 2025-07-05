@@ -2,6 +2,9 @@ import { useContext, useEffect, useState } from 'react';
 import { Menu , X} from 'lucide-react';
 import { DataContext } from '../../Manager/context';
 
+import Icon from "../../assets/Ab/icon.png"
+import { Links, NavLink } from 'react-router';
+
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -21,13 +24,13 @@ const Navbar = () => {
       <nav
         className={`nav flex justify-between items-center relative py-3.5 px-5 rounded-4xl transition-all duration-300 bg-white/75 backdrop-blur-md shadow-md`}
       >
-        <div className="logo font-medium text-5xl text-gray-800">Logo</div>
+        <div className="logo font-medium text-[42px]  text-gray-800 flex items-center"><img src={Icon} alt="" className='w-15 h-16' />Interior</div>
         <div className="link hidden lg:flex">
-          <ul className="flex gap-8 text-black font-medium text-[24px]">
-            <li>Home</li>
-            <li>Work</li>
-            <li>About</li>
-            <li>Contact</li>
+          <ul className="flex gap-8 text-black font-medium text-[24px] cursor-pointer">
+           <NavLink to="/"> Home</NavLink>
+           <NavLink> Work</NavLink>
+           <NavLink> About</NavLink>
+           <NavLink to="/contact"> Contact</NavLink>
           </ul>
         </div>
         <div className="btn hidden lg:flex">

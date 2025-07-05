@@ -3,6 +3,7 @@ import {Link,Routes,Route} from 'react-router';
 import Home from './Pages/Home';
 import Navbar from './Component/Navbar/Navbar';
 import { DataContext } from './Manager/context';
+import Contact from './Pages/Contact';
 function App() {
  const {visible}=useContext(DataContext);
   return (
@@ -11,7 +12,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/contact" element={<Contact/>} />
       </Routes>
     </div>
   )

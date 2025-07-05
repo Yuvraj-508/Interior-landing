@@ -6,10 +6,7 @@ import Img from '../../assets/ser/sr.avif';
 import Img1 from '../../assets/ser/sr1.avif';
 import Img2 from '../../assets/ser/sr2.avif';
 
-const fadeInUp = {
-  hidden: { opacity: 0, y: 80 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
-};
+
 
 export default function WorkFlow() {
   const [activeStep, setActiveStep] = useState(0);
@@ -59,9 +56,10 @@ export default function WorkFlow() {
   });
 };
   return (
-    <div className="w-full flex mt-25 px-[4%] md:px-[8%] lg:px-[12%]">
+    
+    <div className="w-full flex mt-25 px-[4%] ">
       {/* Left Side */}
-      <div className="md:w-[59%] hidden md:flex flex-col gap-5 sticky top-20 h-fit">
+      <div className="md:w-[59%] hidden lg:flex flex-col gap-5 sticky top-20 h-fit">
         <p className="text-xl font-bold text-white rounded-xl px-3 py-1 w-fit bg-[#004643] flex items-center gap-1">
           <ClipboardList /> How We Work
         </p>
@@ -85,7 +83,7 @@ export default function WorkFlow() {
       </div>
 
       {/* Right Side */}
-      <div className="md:w-[41%] w-full flex flex-col items-center justify-center gap-8">
+      <div className="lg:w-[41%] w-full flex flex-col items-center justify-center gap-8">
         {steps.map((step, index) => {
           const ref = useRef(null);
           const controls = useAnimation();
@@ -109,10 +107,10 @@ export default function WorkFlow() {
               // variants={fadeInUp}
               className="w-full flex flex-col  flex-wrap items-center md:gap-5 justify-center text-white bg-[#004643] px-2 py-4 relative overflow-hidden rounded-xl"
             >
-              <div className="md:w-[550px] w-full  h-[350px] relative overflow-hidden rounded-3xl px-2">
+              <div className="lg:w-[550px] w-full  h-[350px] relative overflow-hidden rounded-3xl px-2">
                 <img src={step.img} alt="" className="w-full rounded-3xl h-full" />
               </div>
-              <div className="md:w-[535px]  w-full  absolute flex items-center gap-5 bg-white/15 backdrop-blur-xl sm:bottom-0 md:bottom-26 bottom-0 px-4 z-10">
+              <div className="lg:w-[535px]  w-full  absolute flex items-center gap-5 bg-white/15 backdrop-blur-xl sm:bottom-0 lg:bottom-26 bottom-0 px-4 z-10">
                 <p className="text-[16px] font-bold -translate-y-7">STEP</p>
                 <p className="text-[76px] dm">{step.step}</p>
                 <p className="text-[22px] font-bold dm -translate-y-5">
@@ -120,7 +118,7 @@ export default function WorkFlow() {
                   {step.title}
                 </p>
               </div>
-              <p className="mt-7 text-[20px] hidden md:w-[530px]  font-bold leading-6">{step.desc}</p>
+              <p className="mt-7 text-[20px] hidden md:w-[530px] lg:flex  font-bold leading-6">{step.desc}</p>
             </motion.div>
           );
         })}

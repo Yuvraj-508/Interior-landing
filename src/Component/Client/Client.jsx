@@ -4,6 +4,7 @@ import { ArrowUpRight, ArrowDownLeft } from 'lucide-react';
 import Img1 from "../../assets/Ab/aa4.avif";
 import Img2 from "../../assets/Ab/aa.avif";
 import Img3 from "../../assets/Ab/aa3.avif";
+import ScrollFadeIn from '../Scroll';
 
 const testimonials = [
   {
@@ -66,6 +67,7 @@ function Client() {
   const testimonial = testimonials[index];
 
   return (
+    <ScrollFadeIn>
     <div className="w-full flex flex-col items-center justify-center mt-30">
       <h1 className="text-[54px] font-normal text-[#02312F]">Client Stories</h1>
 
@@ -113,6 +115,7 @@ function Client() {
         </div>
       </div>
     </div>
+    </ScrollFadeIn>
   )
 }
 

@@ -6,10 +6,12 @@ import img5 from '../../assets/heroI/w5.jpg'
 import img2 from '../../assets/heroI/w2.jpg'
 import img7 from '../../assets/heroI/w7.avif'
 import img8 from '../../assets/heroI/w8.avif'
+import ScrollFadeIn from '../Scroll';
 
 
 function Work() {
   return (
+    <ScrollFadeIn>
     <div className='work w-full px-[4%] md:px-[8%] lg:px-[12%] mt-15 text-center flex flex-col gap-18'>
       <div className="w-full flex flex-col gap-3 items-center   ">
         <h1 className='text-[54px] md:max-w-[45%] leading-15 text-center'>ELGANCE REDEFINED</h1>
@@ -37,6 +39,7 @@ function Work() {
         </button>
       </div>
     </div>
+    </ScrollFadeIn>
   )
 }
 

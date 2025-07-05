@@ -2,9 +2,11 @@ import React from 'react';
 import Img from '../../assets/ser/dec.avif';
 import Img2 from '../../assets/ser/dec1.avif';
 import Img3 from '../../assets/Ab/aa3.avif';
+import ScrollFadeIn from '../Scroll';
 
 function Service() {
   return (
+    <ScrollFadeIn>
     <div className='w-full px-[2%] sm:px-[4%] md:px-[8%] lg:px-[12%] mt-30'>
       <div className="flex flex-col gap-2 items-center md:items-start text-[#02312F]"> {/* Align content to the start */}
         <h1 className='text-[34px] md:[text-[24px] font-bold '>SERVICES</h1>
@@ -41,6 +43,7 @@ function Service() {
         </div>
       </div>
     </div>
+    </ScrollFadeIn>
   );
 }
 
