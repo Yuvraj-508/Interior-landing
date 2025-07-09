@@ -10,7 +10,7 @@ import { Link } from 'react-scroll';
 function Hero() {
   return (
     <div className="hero w-full  relative flex items-center justify-center px-[2%] sm:px-[4%] md:px-[8%] lg:px-[12%] bg-cover bg-center">
-     <ScrollFadeIn> <div className=" mt-6 sm:mt-18 md:mt-0 flex flex-col sm:gap-8 gap-4 md:gap-8 items-center md:items-start md:-translate-y-[0%] md:translate-x-[13%] z-10">
+     <ScrollFadeIn> <div className=" mt-6 sm:mt-18 md:mt-0 flex flex-col sm:gap-8 gap-4 md:gap-8 items-center md:items-start md:-translate-y-[25%] md:translate-x-[13%] z-10">
         <motion.h1 className="text-white text-center md:text-start sm:text-[52px] text-[44px] lg:text-[92px] md:text-[80px] lg:max-w-[85%] md:max-w-[90%] lg:leading-22 leading-14 md:leading-20 xl:leading-25 xl:max-w-[65%] font-medium dm">
           Crafting spaces feel like home
         </motion.h1>
