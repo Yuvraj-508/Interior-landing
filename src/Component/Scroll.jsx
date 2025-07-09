@@ -4,7 +4,7 @@ import { useRef } from "react";
 
 const ScrollFadeIn = ({ children, delay = 0 }) => {
   const ref = useRef();
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
+  const isInView = useInView(ref, { once: true });
 
   return (
     <motion.div

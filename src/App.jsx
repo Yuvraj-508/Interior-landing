@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import {Link,Routes,Route} from 'react-router';
 import Home from './Pages/Home';
 import Navbar from './Component/Navbar/Navbar';
+import { Toaster } from "react-hot-toast";
 import { DataContext } from './Manager/context';
 import Contact from './Pages/Contact';
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className='relative'>
       <div className={`${visible?'bef':''} transition  duration-50 ease-in-out `}/>
       <Navbar/>
+      <Toaster/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact/>} />
